@@ -1,0 +1,32 @@
+{
+  "name": "react-app-rewire-nearley",
+  "version": "1.0.0",
+  "description": "Add nearley-loader to a react-app-rewired config.",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write", "git add"],
+    "*.json": ["prettier --parser json --write", "git add"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icopp/react-app-rewire-nearley.git"
+  },
+  "keywords": ["nearley", "react-app-rewired"],
+  "author": "Ian Copp <copp.ian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icopp/react-app-rewire-nearley/issues"
+  },
+  "homepage": "https://github.com/icopp/react-app-rewire-nearley#readme",
+  "dependencies": {
+    "nearley-loader": "0.0.2"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "prettier": "^1.7.0"
+  }
+}
