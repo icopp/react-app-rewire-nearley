@@ -15,7 +15,8 @@ function rewireNearley(config, env, nearleyLoaderOptions = {}) {
 
   const nearleyRules = {
     test: nearleyExtension,
-    loader: 'nearley-loader'
+    loader: 'nearley-loader',
+    options: nearleyLoaderOptions
   }
 
   config.module.rules.push(nearleyRules)
