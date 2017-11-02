@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-nearley",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Add nearley-loader to a react-app-rewired config.",
   "main": "index.js",
   "files": ["index.js"],
