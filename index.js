@@ -1,3 +1,5 @@
+const path = require('path')
+
 /**
  * @param {Object} rule
  * @return {Array}
@@ -20,10 +22,10 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
 }
 
 /**
-* Given a rule, return if it uses a specific loader.
-*/
+ * Given a rule, return if it uses a specific loader.
+ */
 const createLoaderMatcher = loader => rule =>
-  rule.loader && rule.loader.indexOf(`/${loader}/`) !== -1
+  rule.loader && rule.loader.indexOf(`${path.sep}${loader}${path.sep}`) !== -1
 
 /**
 * Get the existing file-loader config.
